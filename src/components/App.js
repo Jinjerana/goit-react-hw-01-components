@@ -1,5 +1,4 @@
 import { FriendList } from './Friends/Friends/Friendlist/FriendList';
-// import { FriendListItem } from './FriendListItem';
 import { Profile } from './Profile/Profile';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 import { Statistics } from './Statistics/Statistics';

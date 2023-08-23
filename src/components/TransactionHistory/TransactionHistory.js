@@ -34,9 +34,3 @@ TransactionHistory.propTypes = {
   amount: PropTypes.number.isRequired,
   currency: PropTypes.string.isRequired,
 }
-
-
-// import transactions from 'path/to/transactions.json';
-
-{/* <TransactionHistory items={transactions} />; */}
-

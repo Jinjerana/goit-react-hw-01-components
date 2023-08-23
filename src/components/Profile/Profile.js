@@ -1,4 +1,4 @@
-import { Wrapper, Card, Avatar, Name, Tag, Location, StatList, StatItem, Label, Quantity, Info } from './Profile.styled'
+import { Wrapper, Card, Avatar, Name, Tag, Location, StatList, StatItem, Label, Quantity } from './Profile.styled'
 
 import PropTypes from 'prop-types';
 
@@ -43,14 +43,7 @@ Profile.propTypes = {
 }).isRequired).isRequired
 }
 
-{/* <Profile
-  username = {user.username}
-  tag = {user.tag}
-  location = {user.location}
-  avatar = {user.avatar}
-  stats = {user.stats} /> */}
 
-// import user from './user.json'
 
 
 

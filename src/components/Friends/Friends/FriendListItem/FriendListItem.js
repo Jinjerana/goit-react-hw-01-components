@@ -17,8 +17,3 @@ FriendListItem.propTypes = {
     name: PropTypes.string.isRequired,
     is_online: PropTypes.bool.isRequired,
 }
-
-
-
-
-

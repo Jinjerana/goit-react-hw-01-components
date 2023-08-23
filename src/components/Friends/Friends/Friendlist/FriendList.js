@@ -34,10 +34,6 @@ FriendList.propTypes = {
     }).isRequired).isRequired
 }
 
-// import friends from './friends.json';
-
-{/* <FriendList friends={friends} />; */}
-
 
 
 
