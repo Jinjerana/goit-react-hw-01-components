@@ -10,27 +10,18 @@ import transactions from '../Data/transactions.json';
 
 export const App = () => {
   return (
-    <div
-    display="flex"
-    flexDirection="column"
-    alignItems="center"
-    justifyContent="space-between"
-    as="main"
-    px={5}
-    py={3}
-    width={1} 
-    bg="muted">
+    <div>
     
-    <Profile
+  <Profile
   username = {user.username}
   tag = {user.tag}
   location = {user.location}
   avatar = {user.avatar}
   stats = {user.stats} />
+  <FriendList friends={friends} />
   <Statistics title="Upload stats" stats={data} />
-  <Statistics stats={data} />
-      <FriendList friends={friends} />
-      <TransactionHistory items={transactions} />
-      </div>
+  <TransactionHistory items={transactions} />
+
+    </div>
   );
 };

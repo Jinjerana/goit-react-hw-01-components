@@ -15,14 +15,13 @@ export const FriendList = ({friends}) => {
             id={friend.id}
             avatar={friend.avatar}
             name={friend.name}
-            is_online={friend.$isOnline}/>
+            isOnline={friend.isOnline}/>
           )
           )
       }
    </FriendsList>
   )
 }
-
 
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(

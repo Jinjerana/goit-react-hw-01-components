@@ -1,12 +1,12 @@
-import { StatList, StatItem, Title, Label, Percentage } from './Statistics.styled'
+import { Section, StatList, StatItem, Title, Label, Percentage } from './Statistics.styled'
 
 import PropTypes from 'prop-types';
 
 export const Statistics = ({stats, title}) => {
   return (
-    <Statistics>
+    <Section>
       {title && <Title>{title}</Title>}
-
+      
   <StatList>
     {
     stats.map((item, idx) => (
@@ -17,16 +17,17 @@ export const Statistics = ({stats, title}) => {
         <Label>{item.label}</Label>
         <Percentage>{item.percentage}%</Percentage>
       </StatItem>
-      ))};
+      ))}
   </StatList>
-</Statistics>
+</Section>
+
 )
 };
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
-    PropTypes.exact({
+    PropTypes.shape({
     id: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
     percentage: PropTypes.number.isRequired,
