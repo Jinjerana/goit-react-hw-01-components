@@ -19,7 +19,9 @@ display: block;
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: rgba(0.2, 0.1, 0, 0.3);
+  background-color: ${props => {
+    return props.data_isonline ? 'green' : 'red';
+  }};
 `
 
 export const Image = styled.img`

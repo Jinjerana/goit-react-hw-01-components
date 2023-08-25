@@ -1,4 +1,6 @@
-import { Table, Thead, Tr, Th, Tbody, Td, SecondTr, Type } from './TransactionHistory.styled'
+import { Table, Thead, Tr, Th, Tbody } from './TransactionHistory.styled'
+
+import { TableRow } from 'components/TableRow/TableRow';
 
 import PropTypes from 'prop-types';
 
@@ -31,15 +33,7 @@ export const TransactionHistory = ({ items }) => {
   );
 };
 
-const TableRow = ({ type, amount, currency, index }) => {
-  return (
-    <SecondTr idx={index}>
-      <Type>{type}</Type>
-      <Td>{amount}</Td>
-      <Td>{currency}</Td>
-    </SecondTr>
-  );
-};
+
 
 TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
@@ -52,9 +46,3 @@ TransactionHistory.propTypes = {
   ).isRequired,
 };
 
-TableRow.propTypes = {
-  index: PropTypes.number.isRequired,
-  type: PropTypes.string.isRequired,
-  amount: PropTypes.string.isRequired,
-  currency: PropTypes.string.isRequired,
-};
